@@ -15,11 +15,14 @@ public class FetchDemo {
 		Session session = factory.openSession();
 		
 		//get data
-		StudentEntity stu = (StudentEntity) session.get(StudentEntity.class, 102);
+		
+		StudentEntity stu = (StudentEntity) session.get(StudentEntity.class, 2);
 		System.out.println(stu.getCity());
 		
-		Address add = (Address) session.load(Address.class, 1);
-		System.out.println(add.getStreet());
+		
+		  Address add = (Address) session.load(Address.class, 1);
+		  System.out.println(add.getStreet());
+		 
 		
 		session.close();
 		factory.close();

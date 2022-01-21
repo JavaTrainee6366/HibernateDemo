@@ -19,10 +19,11 @@
 		<property name="show_sql">true</property>
 		<property name="hibernate.current_session_context_class">thread</property>
 		<mapping class="com.demo.MyMevanProject.StudentEntity"/>
-		<mapping class = "com.demo.MyMevanProject.Address"/>
 		<mapping class="com.demo.MyMevanProject.Certificate"/>
+		<mapping class = "com.demo.MyMevanProject.Address"/>
 		<mapping class="com.map.Question"/>
-		<mapping class="com.map.Answer"/>
-		
+		<mapping class="com.map.Answer"/> 
+		<mapping class="com.map.Cart"/>
+		<mapping class="com.map.Item"/>		
 	</session-factory>
 	</hibernate-configuration>

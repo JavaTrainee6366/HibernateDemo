@@ -20,7 +20,7 @@ public class EmDemo {
         stu.setCerti(cert);
         
         StudentEntity stu2 = new StudentEntity();
-        stu2.setId(112);
+       // stu2.setId(112);
         stu2.setCity("Mohali");
         stu2.setName("Ravi");
         
@@ -37,7 +37,7 @@ public class EmDemo {
         
         tx.commit();
         session.close();
-        factory.close();
+        //factory.close();
 	}
 
 }

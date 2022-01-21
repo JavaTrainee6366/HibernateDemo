@@ -14,23 +14,25 @@ public class MapDemo {
         
 		
 		Question Q1 = new Question();
-		Q1.setQues("What is Python");
+		Q1.setQues("What is SQL");
 		Answer ans = new Answer();
-		ans.setAnswer("Python is programming Language");
+		ans.setAnswer("Sql is DB");
 		Q1.setAns(ans);
 		
 		
 		
 		Session session =  factory.openSession();
 		Transaction tx = session.beginTransaction();
-		session.save(ans);
-		session.save(Q1);
+		//session.save(ans);
+		//session.save(Q1);
         
 		tx.commit();
 		
-		Question ques = (Question) session.load(Question.class, 5);
-		System.out.println(ques.getQues());
-		System.out.println(ques.getAns().getAnswer());
+		
+		  Question ques = (Question) session.load(Question.class, 10);
+		  System.out.println(ques.getQues());
+		  System.out.println(ques.getAns().getAnswer());
+		 
         
         session.close();
         factory.close();
